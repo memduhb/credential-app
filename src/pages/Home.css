@@ -1,0 +1,68 @@
+
+.buttons-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px; /* Add some margin at the top */
+  }
+  
+  .centered-button {
+    margin: 8px;
+    padding: 10px 0; /* Adjust vertical padding */
+    width: 250px; /* Set a fixed width for the buttons */
+    height: 50px;
+    font-size: 16px;
+    background-color: #61dafb;
+    color: #265b9e;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center; /* Center the text horizontally */
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+  }
+  
+  .centered-button:hover {
+    background-color: #47a6d5;
+    transform: scale(1.05);
+  }
+  
+  
+  .welcome-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+    height: 100px;
+    opacity: 0; /* Hide the welcome header initially */
+    animation: fadeIn 1s ease-in-out forwards; /* Apply the fadeIn animation */
+  }
+  
+  .welcome-header {
+    font-size: 28px;
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat font */
+    margin-bottom: 20px;
+    font-weight: 600  ;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px); /* Slide up slightly */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .logo {
+    width: 100px; /* Set the width of the logo */
+    height: auto; /* Let the height adjust proportionally */
+    margin-bottom: 10px; /* Add some spacing below the logo */
+  }
+  
+  
+  
+  
